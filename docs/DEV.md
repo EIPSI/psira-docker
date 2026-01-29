@@ -44,6 +44,12 @@ Instalar **una sola vez**:
 
    * Activar *Use WSL 2 based engine*
 2. **WSL2 con Ubuntu**
+```bash
+wsl --install
+# Acceder a la consola Ubuntu
+ubuntu
+```
+
 3. **Git**
 4. **VS Code** (recomendado)
 
