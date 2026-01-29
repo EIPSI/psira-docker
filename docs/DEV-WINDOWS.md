@@ -15,7 +15,7 @@ El objetivo es que cualquier integrante del equipo pueda:
 
 El proyecto se organiza en **tres repositorios separados**:
 
-* `psira-infra` → infraestructura (Docker, base de datos, proxy, etc.)
+* `psira-docker` → infraestructura (Docker, base de datos, proxy, etc.)
 * `psira-frontend` → aplicación frontend
 * `psira-backend` → aplicación backend
 
@@ -64,7 +64,7 @@ En tu computadora (preferentemente dentro de WSL), crear una carpeta común, por
 
 ```text
 ~/eipsi/
-  psira-infra/
+  psira-docker/
   psira-frontend/
   psira-backend/
 ```
@@ -73,7 +73,7 @@ Clonar los repositorios en esa estructura:
 
 ```bash
 cd ~/eipsi
-git clone <repo-psira-infra>
+git clone <repo-psira-docker>
 git clone <repo-psira-frontend>
 git clone <repo-psira-backend>
 ```
@@ -85,10 +85,10 @@ Los nombres y la ubicación relativa importan porque `docker-compose.dev.yml` as
 
 ## 4. Variables de entorno (solo una vez)
 
-Dentro del repo **`psira-infra`**:
+Dentro del repo **`psira-docker`**:
 
 ```bash
-cd psira-infra
+cd psira-docker
 cp .env.local.example .env
 ```
 
@@ -99,7 +99,7 @@ Es solo para uso local.
 
 ## 5. Levantar el entorno de desarrollo
 
-Desde la carpeta `psira-infra`:
+Desde la carpeta `psira-docker`:
 
 ```bash
 docker compose \
@@ -165,7 +165,7 @@ Este entorno **NO usa hot reload** por ahora.
 Flujo normal:
 
 1. editar archivos en frontend o backend
-2. volver a la carpeta `psira-infra`
+2. volver a la carpeta `psira-docker`
 3. ejecutar:
 
 ```bash
