@@ -5,7 +5,7 @@ services:
 
   mhira-frontend:
     build: 
-      context: ./mhira-frontend
+      context: ./psira-frontend
       args: 
         email: ${FRONTEND_MAIL}
         version: ${APP_VERSION}
@@ -20,7 +20,7 @@ services:
 
   mhira-backend:
     build: 
-      context: ./mhira-backend
+      context: ./psira-backend
       args:
         version: ${APP_VERSION}
     restart: unless-stopped
