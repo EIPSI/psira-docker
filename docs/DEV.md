@@ -127,10 +127,10 @@ La primera vez puede demorar varios minutos.
 Una vez levantado el entorno:
 
 * **Frontend:**
-  [http://localhost:8080](http://psira.localhost:8080)
+  [http://psira.localhost:8080](http://psira.localhost:8080)
 
 * **GraphQL (backend):**
-  [http://localhost:8080/graphql](http://psira.localhost:8080/graphql)
+  [http://psira.localhost:8080/graphql](http://psira.localhost:8080/graphql)
 
 * **Base de datos:**
   No es necesario acceder directamente para desarrollo habitual.
