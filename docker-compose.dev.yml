@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  # Override del FRONTEND para usar el repo real (no la imagen GHCR via wrapper)
+  psira-frontend:
+    build:
+      context: ../psira-frontend
+      dockerfile: Dockerfile
+      args:
+        email: ${FRONTEND_MAIL}
+        version: ${APP_VERSION}
+
+  # Override del BACKEND para usar el repo real (no la imagen GHCR via wrapper)
+  psira-backend:
+    build:
+      context: ../psira-backend
+      dockerfile: Dockerfile
+      args:
+        version: ${APP_VERSION}
