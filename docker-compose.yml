@@ -1,9 +1,9 @@
 version: "3.9"
 
 services:
-  ### MHIRA Frontend Container ###########################
+  ### PSIRA Frontend Container ###########################
 
-  mhira-frontend:
+  psira-frontend:
     build: 
       context: ./psira-frontend
       args: 
@@ -16,9 +16,9 @@ services:
     networks:
       - frontend
 
-  ### MHIRA Backend Container ###########################
+  ### PSIRA Backend Container ###########################
 
-  mhira-backend:
+  psira-backend:
     build: 
       context: ./psira-backend
       args:
@@ -83,8 +83,8 @@ services:
       - "${CADDY_HOST_HTTP_PORT}:80"
       - "${CADDY_HOST_HTTPS_PORT}:443"
     depends_on:
-      - mhira-frontend
-      - mhira-backend
+      - psira-frontend
+      - psira-backend
     networks:
       - frontend
       - backend
