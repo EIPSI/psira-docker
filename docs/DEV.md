@@ -40,9 +40,9 @@ Esto se logra usando **dos archivos de Docker Compose**:
 
 Instalar **una sola vez**:
 
-1. **Docker Desktop**
+1. **Docker Desktop** (Debe estar activo para usarlo desde Terminal)
 
-   * Activar *Use WSL 2 based engine*
+   * Activar *Use WSL 2 based engine (desde la configuracion asegurarse que todo este marcado)*
 2. **WSL2 con Ubuntu**
 ```bash
 wsl --install
