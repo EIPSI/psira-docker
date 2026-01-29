@@ -3,8 +3,10 @@
 }
 
 localhost, 127.0.0.1, {$SITE_DOMAIN} {
-    reverse_proxy /api/* psira-backend:3000
-    reverse_proxy /graphql psira-backend:3000
+    # reverse_proxy /api/* psira-backend:3000
+    reverse_proxy /api* psira-backend:3000
+    # reverse_proxy /graphql psira-backend:3000
+    reverse_proxy /graphql* psira-backend:3000
     reverse_proxy /shiny shiny:3838
     reverse_proxy /shiny/* shiny:3838
 
