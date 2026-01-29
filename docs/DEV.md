@@ -175,10 +175,18 @@ Flujo normal:
 docker compose \
   -f docker-compose.yml \
   -f docker-compose.dev.yml \
-  up -d --build
+  up -d
+```
+4. o reiniciá solo el servicio:
+
+```bash
+docker compose \
+  -f docker-compose.yml \
+  -f docker-compose.dev.yml \
+  restart psira-backend
 ```
 
-4. refrescar el navegador
+5. refrescar el navegador
 
 Esto garantiza que todos trabajen en un entorno estable e idéntico.
 
