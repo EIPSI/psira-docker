@@ -15,6 +15,7 @@ dist/
 
 # Log files
 *.log
+logs/
 
 # Package files
 *.jar
@@ -51,3 +52,14 @@ Thumbs.db
 
 # Env file
 .env
+
+# Docker local development data
+.data/
+.backups/
+
+# Docker overrides
+docker-compose.override.yml
+
+# Editor temp files
+*.swp
+*.swo
