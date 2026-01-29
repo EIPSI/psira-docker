@@ -92,8 +92,7 @@ cd psira-docker
 cp .env.local.example .env
 ```
 
-El archivo `.env` **NO debe subirse al repositorio**.
-Es solo para uso local.
+El archivo .env está ignorado por .gitignore y es solo para configuración local. No lo compartas ni lo fuerces a commitear (git add -f). Para compartir configuración usamos .env.local.example.
 
 ---
 
