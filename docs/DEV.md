@@ -73,9 +73,9 @@ Clonar los repositorios en esa estructura:
 
 ```bash
 cd ~/eipsi
-git clone <repo-psira-docker>
-git clone <repo-psira-frontend>
-git clone <repo-psira-backend>
+git clone -b develop <repo-psira-docke>
+git clone -b develop <repo-psira-frontend>
+git clone -b develop <repo-psira-backend>
 ```
 
 ⚠️ **Importante:**
