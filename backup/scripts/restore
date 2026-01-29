@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "Running mhira data restore..."
+echo "Running psira data restore..."
 
 get_archive() {
     i=1
@@ -40,10 +40,10 @@ while true; do
 done
 
 if [ -f "${mongo_archive}/${selected_file}" ]; then
-    psql -h mhira-docker-postgres-1 -U "$POSTGRES_USER" -d "$POSTGRES_DB" -f "${postgres_archive}/${selected_file}"
-    mongorestore --host mhira-docker-mongo-1 --drop --archive="${mongo_archive}/${selected_file}"
+    psql -h postgres -U "$POSTGRES_USER" -d "$POSTGRES_DB" -f "${postgres_archive}/${selected_file}"
+    mongorestore --host mongo --drop --archive="${mongo_archive}/${selected_file}"
 else
     echo "Mongo file does not exist!"
 fi
 
-echo "Finished running mhira data restore!"
+echo "Finished running psira data restore!"
