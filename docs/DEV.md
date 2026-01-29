@@ -84,8 +84,8 @@ Clonar los repositorios en esa estructura:
 ```bash
 # Para Windows
 ubuntu
-mkdir psira-eipsi
-cd psira-eipsi
+mkdir -p ~/eipsi/psira
+cd ~/eipsi/psira
 git clone -b develop https://github.com/EIPSI/psira-docker.git
 git clone -b develop https://github.com/EIPSI/psira-frontend.git
 git clone -b develop https://github.com/EIPSI/psira-backend.git
@@ -93,6 +93,15 @@ git clone -b develop https://github.com/EIPSI/psira-backend.git
 
 ⚠️ **Importante:**
 Los nombres y la ubicación relativa importan porque `docker-compose.dev.yml` asume esta estructura.
+
+Abrir carpetas desde la terminal
+```bash
+# Para Windows
+ubuntu
+# Te pones dentro de la carpeta que queres abrir:
+explorer.exe .
+# Luego copias el path para abrir la carpeta con VS Code o cualquier editor
+```
 
 ---
 
