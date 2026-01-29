@@ -1,6 +1,6 @@
 ARG version
 
-FROM ghcr.io/eipsi/eipsi-mhira-backend:$version
+FROM ghcr.io/eipsi/psira-backend:$version
 
 WORKDIR /app
 
