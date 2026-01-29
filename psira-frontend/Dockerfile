@@ -1,6 +1,6 @@
 ARG version
 
-FROM ghcr.io/eipsi/eipsi-mhira-frontend:$version
+FROM ghcr.io/eipsi/psira-frontend:$version
 
 WORKDIR /usr/share/nginx/html
 
