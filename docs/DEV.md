@@ -82,7 +82,8 @@ En tu computadora (preferentemente dentro de WSL), crear una carpeta común, por
 Clonar los repositorios en esa estructura:
 
 ```bash
-cd ~/eipsi
+# Para Windows
+cd "/mnt/c/<su-ruta-en-c>/eipsi"
 git clone -b develop https://github.com/EIPSI/psira-docker.git
 git clone -b develop https://github.com/EIPSI/psira-frontend.git
 git clone -b develop https://github.com/EIPSI/psira-backend.git
