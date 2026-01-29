@@ -54,6 +54,10 @@ Verificar instalación:
 ```bash
 docker version
 docker compose version
+docker ps
+# si da permission denied:
+sudo usermod -aG docker $USER
+newgrp docker
 ```
 
 ---
