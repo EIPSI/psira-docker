@@ -131,6 +131,8 @@ La primera vez puede demorar varios minutos.
 Ver el estado de los servicios:
 ```bash
 docker ps
+# Si alguno no esta UP podemos chequear problemas en cada uno con
+docker logs --tail 200 <nmbre-del-servicio-como-esta-en-col-NAME>
 ```
 
 ---
