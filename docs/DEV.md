@@ -83,6 +83,7 @@ Clonar los repositorios en esa estructura:
 
 ```bash
 # Para Windows
+ubuntu
 cd "/mnt/c/<su-ruta-en-c>/eipsi"
 git clone -b develop https://github.com/EIPSI/psira-docker.git
 git clone -b develop https://github.com/EIPSI/psira-frontend.git
