@@ -128,17 +128,31 @@ Qué hace este comando:
 
 La primera vez puede demorar varios minutos.
 
+Ver el estado de los servicios:
+```bash
+docker ps
+```
+
 ---
 
 ## 6. Accesos locales
 
 Una vez levantado el entorno:
 
-* **Frontend:**
+* **Frontend (HTTP):**
   [http://psira.localhost:8080](http://psira.localhost:8080)
 
-* **GraphQL (backend):**
+* **Frontend (HTTPS):**
+  [https://psira.localhost:8443](https://psira.localhost:8443) (si el navegador redirige a HTTPS o si querés probar con TLS local)
+
+* **GraphQL (HTTP):**
   [http://psira.localhost:8080/graphql](http://psira.localhost:8080/graphql)
+
+* **GraphQL (HTTPS):**
+  [https://psira.localhost:8443/graphql](https://psira.localhost:8443/graphql)
+
+* **Shiny:**
+  [http://psira.localhost:3838/](http://psira.localhost:3838/)
 
 * **Base de datos:**
   No es necesario acceder directamente para desarrollo habitual.
