@@ -77,9 +77,9 @@ Clonar los repositorios en esa estructura:
 
 ```bash
 cd ~/eipsi
-git clone -b develop <repo-psira-docke>
-git clone -b develop <repo-psira-frontend>
-git clone -b develop <repo-psira-backend>
+git clone -b develop https://github.com/EIPSI/psira-docker.git
+git clone -b develop https://github.com/EIPSI/psira-frontend.git
+git clone -b develop https://github.com/EIPSI/psira-backend.git
 ```
 
 ⚠️ **Importante:**
@@ -127,10 +127,10 @@ La primera vez puede demorar varios minutos.
 Una vez levantado el entorno:
 
 * **Frontend:**
-  [http://localhost:8080](http://localhost:8080)
+  [http://localhost:8080](http://psira.localhost:8080)
 
 * **GraphQL (backend):**
-  [http://localhost:8080/graphql](http://localhost:8080/graphql)
+  [http://localhost:8080/graphql](http://psira.localhost:8080/graphql)
 
 * **Base de datos:**
   No es necesario acceder directamente para desarrollo habitual.
