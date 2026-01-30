@@ -89,6 +89,7 @@ cd ~/eipsi/psira
 git clone -b develop https://github.com/EIPSI/psira-docker.git
 git clone -b develop https://github.com/EIPSI/psira-frontend.git
 git clone -b develop https://github.com/EIPSI/psira-backend.git
+mkdir -p ~/psira-data
 ```
 
 ⚠️ **Importante:**
