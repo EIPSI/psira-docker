@@ -288,6 +288,7 @@ Luego:
 
 ⚠️ Solo el responsable del proyecto mergea a `develop` o `main`.
 
+### ❗ Una vez se resuelve el push a develop ELIMINAR rama de trabajo y crear una nueva para nuevos trabajos
 ---
 
 ## 11. Errores comunes
