@@ -73,7 +73,7 @@ newgrp docker
 En tu computadora (preferentemente dentro de WSL), crear una carpeta común, por ejemplo:
 
 ```text
-~/eipsi/
+~/eipsi/psira/
   psira-docker/
   psira-frontend/
   psira-backend/
@@ -171,7 +171,7 @@ Una vez levantado el entorno:
 
 ---
 
-## 7. Flujo de trabajo con Git
+## 7. Flujo de trabajo con Git (antes de empezar a editar)
 
 ### Ramas
 
@@ -179,11 +179,14 @@ Una vez levantado el entorno:
 * `develop` → integración/staging
 * `nombre/tarea` → ramas de trabajo individual
 
-### Crear una rama de trabajo
+### Crear una rama de trabajo propia cada vez que vas a editar por primera vez un repositorio
 
 ```bash
+# Entras al repo local y decis que estas en esta rama
 git checkout develop
+# Actualizas la ultima version de la rama
 git pull origin develop
+# Creas tu propia rama
 git checkout -b nombre/descripcion-corta
 ```
 
@@ -192,6 +195,8 @@ Ejemplo:
 ```bash
 git checkout -b juan/fix-questionnaire-error
 ```
+
+Una vez en la rama propia se pueden realizar todos los cambios que uno quiera.
 
 ---
 
@@ -220,7 +225,26 @@ docker compose \
   restart psira-backend
 ```
 
-5. refrescar el navegador
+5. refrescar el navegador (o **borrar caché** / datos del sitio)
+
+* **Mozilla Firefox**
+  1. Abrir `about:preferences#privacy`.
+  2. **Cookies y datos del sitio** → **Administrar datos…**.
+  3. Buscar `psira.localhost` y `localhost`.
+  4. **Eliminar seleccionados** → **Guardar cambios**.
+  5. Recargar la página (mejor en ventana privada para test).
+* **Google Chrome**
+  1. Abrir `chrome://settings/siteData`.
+  2. Buscar `psira.localhost` y `localhost`.
+  3. **Eliminar** todas las entradas.
+  4. Abrir DevTools (**F12**) → **Application** → **Storage** → **Clear site data**.
+  5. Probar nuevamente.
+* **Opera**
+  1. Abrir `opera://settings/siteData`.
+  2. Buscar `psira.localhost` y `localhost`.
+  3. **Remove all shown**.
+  4. DevTools (**F12**) → **Application** → **Storage** → **Clear site data**.
+  5. Probar en ventana privada.
 
 Esto garantiza que todos trabajen en un entorno estable e idéntico.
 
