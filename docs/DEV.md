@@ -171,7 +171,7 @@ Una vez levantado el entorno:
 
 ---
 
-## 7. Flujo de trabajo con Git
+## 7. Flujo de trabajo con Git (antes de empezar a editar)
 
 ### Ramas
 
@@ -179,11 +179,14 @@ Una vez levantado el entorno:
 * `develop` → integración/staging
 * `nombre/tarea` → ramas de trabajo individual
 
-### Crear una rama de trabajo
+### Crear una rama de trabajo propia cada vez que vas a editar por primera vez un repositorio
 
 ```bash
+# Entras al repo local y decis que estas en esta rama
 git checkout develop
+# Actualizas la ultima version de la rama
 git pull origin develop
+# Creas tu propia rama
 git checkout -b nombre/descripcion-corta
 ```
 
@@ -192,6 +195,8 @@ Ejemplo:
 ```bash
 git checkout -b juan/fix-questionnaire-error
 ```
+
+Una vez en la rama propia se pueden realizar todos los cambios que uno quiera.
 
 ---
 
