@@ -73,7 +73,7 @@ newgrp docker
 En tu computadora (preferentemente dentro de WSL), crear una carpeta común, por ejemplo:
 
 ```text
-~/eipsi/
+~/eipsi/psira/
   psira-docker/
   psira-frontend/
   psira-backend/
