@@ -220,7 +220,26 @@ docker compose \
   restart psira-backend
 ```
 
-5. refrescar el navegador
+5. refrescar el navegador (o **borrar caché** / datos del sitio)
+
+* **Mozilla Firefox**
+  1. Abrir `about:preferences#privacy`.
+  2. **Cookies y datos del sitio** → **Administrar datos…**.
+  3. Buscar `psira.localhost` y `localhost`.
+  4. **Eliminar seleccionados** → **Guardar cambios**.
+  5. Recargar la página (mejor en ventana privada para test).
+* **Google Chrome**
+  1. Abrir `chrome://settings/siteData`.
+  2. Buscar `psira.localhost` y `localhost`.
+  3. **Eliminar** todas las entradas.
+  4. Abrir DevTools (**F12**) → **Application** → **Storage** → **Clear site data**.
+  5. Probar nuevamente.
+* **Opera**
+  1. Abrir `opera://settings/siteData`.
+  2. Buscar `psira.localhost` y `localhost`.
+  3. **Remove all shown**.
+  4. DevTools (**F12**) → **Application** → **Storage** → **Clear site data**.
+  5. Probar en ventana privada.
 
 Esto garantiza que todos trabajen en un entorno estable e idéntico.
 
