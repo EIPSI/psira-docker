@@ -35,6 +35,8 @@ services:
       - TYPEORM_DATABASE=${POSTGRES_DB}
       - TYPEORM_PASSWORD=${POSTGRES_PASSWORD}
       - TYPEORM_PORT=5432
+      - TYPEORM_SSL=true
+      - TYPEORM_SSL_REJECT_UNAUTHORIZED=false
       - TYPEORM_SYNCHRONIZE=false
       - TYPEORM_LOGGING=true
       - TYPEORM_ENTITIES_DIR=/../**/*.model.{js,ts}
@@ -60,8 +62,6 @@ services:
     networks:
       - frontend
       - backend
-      - shiny
-      - rstudio
     depends_on:
       - redis
       - postgres
