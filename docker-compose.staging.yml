@@ -25,8 +25,8 @@ services:
     image: rocker/tidyverse:4
     build: ./rstudio
     restart: unless-stopped
-    ports:
-      - '8787:8787'
+    # ports:
+    #   - '8788:8787'
     volumes:
       - ${SHINY_APPS_PATH}:/home/${RSTUDIO_USER}/shiny_apps
     environment:
