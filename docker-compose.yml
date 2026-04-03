@@ -135,7 +135,10 @@ services:
     ports:
       - '3838:3838'
     volumes:
-      - ${SHINY_APPS_PATH}:/srv/shiny-server/shiny
+      - ${SHINY_APPS_PATH}/shiny_apps:/srv/shiny-server/shiny
+      - ${SHINY_APPS_PATH}/graphql_functions:/opt/psira-shared/graphql_functions
+      - ${SHINY_APPS_PATH}/utility_functions:/opt/psira-shared/utility_functions
+      - ${SHINY_APPS_PATH}/www:/opt/psira-shared/www
     networks:
       - shiny
 
