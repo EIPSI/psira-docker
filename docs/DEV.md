@@ -77,7 +77,7 @@ En tu computadora (preferentemente dentro de WSL), crear una carpeta común, por
   psira-docker/
   psira-frontend/
   psira-backend/
-  shiny_apps/
+  psira-shiny/
 ```
 
 Clonar los repositorios en esa estructura:
@@ -87,11 +87,10 @@ Clonar los repositorios en esa estructura:
 ubuntu
 mkdir -p ~/eipsi/psira
 cd ~/eipsi/psira
-mkdir -p ~/shiny_apps
 git clone -b develop https://github.com/EIPSI/psira-docker.git
 git clone -b develop https://github.com/EIPSI/psira-frontend.git
 git clone -b develop https://github.com/EIPSI/psira-backend.git
-sudo git clone https://github.com/EIPSI/psira-shiny.git shiny_apps
+sudo git clone https://github.com/EIPSI/psira-shiny.git
 ```
 
 Durante el proceso, Git va a pedir credenciales:
