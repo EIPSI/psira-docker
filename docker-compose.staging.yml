@@ -28,7 +28,7 @@ services:
     # ports:
     #   - '8788:8787'
     volumes:
-      - ${SHINY_APPS_PATH}:/home/${RSTUDIO_USER}/shiny_apps
+      - ${PSIRA_SHINY_PATH}:/home/rstudio/psira-shiny
     environment:
       - PASSWORD=${RSTUDIO_PASSWORD}
       - USER=${RSTUDIO_USER}
