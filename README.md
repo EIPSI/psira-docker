@@ -1,4 +1,4 @@
-# Psychological Reporting Assistant
+# Psychological Reporting Assistant (PSIRA)
 
 You will find mire information on our *[team website](https://equipoeipsi.com/)*.
 
