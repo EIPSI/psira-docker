@@ -63,7 +63,6 @@ services:
       - frontend
       - backend
       - shiny
-      - rstudio
     depends_on:
       - redis
       - postgres
@@ -91,7 +90,6 @@ services:
       - frontend
       - backend
       - shiny
-      - rstudio
 
   ### PostgreSQL Container ####################################
 
@@ -141,23 +139,6 @@ services:
     networks:
       - shiny
 
-  ### R-Studio Container #########################################
-  rstudio:
-    profiles: 
-      - rstudio
-    image: rocker/tidyverse:4
-    build: ./rstudio
-    restart: unless-stopped
-    ports:
-      - '8787:8787'
-    volumes:
-      - ${SHINY_APPS_PATH}:/home/${RSTUDIO_USER}/shiny_apps
-    environment:
-      - PASSWORD=${RSTUDIO_PASSWORD}
-      - USER=${RSTUDIO_USER}
-    networks:
-      - rstudio
-
 ### Backups Container #########################################
   backup:
     build:
@@ -186,8 +167,6 @@ networks:
   backend:
     driver: "bridge"
   shiny:
-    driver: "bridge"
-  rstudio:
     driver: "bridge"
   backup-network:
     driver: "bridge"
