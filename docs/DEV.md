@@ -18,6 +18,7 @@ El proyecto se organiza en **tres repositorios separados**:
 * `psira-docker` → infraestructura (Docker, base de datos, proxy, etc.)
 * `psira-frontend` → aplicación frontend
 * `psira-backend` → aplicación backend
+* `psira-shiny` → aplicación shiny
 
 En **producción y staging**, el sistema corre usando **imágenes publicadas**.
 En **desarrollo local**, el sistema corre usando **el código fuente local**, sin subir nada a ningún registry.
