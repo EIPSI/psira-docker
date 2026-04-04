@@ -108,6 +108,14 @@ Password for 'https://[USUARIO_GITHUB]@github.com': [TOKEN_GITHUB]
 > Los nombres y la ubicación relativa importan porque `docker-compose.dev.yml` asume esta estructura.
 ---
 
+### Cambiar de rama de trabajo (crear nueva)
+
+```bash
+# Creas tu propia rama
+git checkout -b nombre/descripcion-corta
+```
+
+
 Abrir carpetas desde la terminal
 ```bash
 # Para Windows
@@ -200,9 +208,15 @@ Una vez levantado el entorno:
 git checkout develop
 # Actualizas la ultima version de la rama
 git pull origin develop
+```
+
+### Cambiar de rama de trabajo (crear nueva)
+
+```bash
 # Creas tu propia rama
 git checkout -b nombre/descripcion-corta
 ```
+
 
 Ejemplo:
 
