@@ -1,6 +1,6 @@
-# Mental health information reporting assistant
+# Psychological Reporting Assistant (PSIRA)
 
-You will find mire information on our *[project website](https://mhira.app)*.
+You will find mire information on our *[team website](https://equipoeipsi.com/)*.
 
 
-Please visit the *[Installation guide](https://mhira.app/docs/category/installation-guide)* for instructions. 
+Please visit the *[Installation guide](#)* for instructions. 

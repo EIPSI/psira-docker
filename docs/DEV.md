@@ -18,6 +18,7 @@ El proyecto se organiza en **tres repositorios separados**:
 * `psira-docker` → infraestructura (Docker, base de datos, proxy, etc.)
 * `psira-frontend` → aplicación frontend
 * `psira-backend` → aplicación backend
+* `psira-shiny` → aplicación shiny
 
 En **producción y staging**, el sistema corre usando **imágenes publicadas**.
 En **desarrollo local**, el sistema corre usando **el código fuente local**, sin subir nada a ningún registry.
@@ -77,6 +78,7 @@ En tu computadora (preferentemente dentro de WSL), crear una carpeta común, por
   psira-docker/
   psira-frontend/
   psira-backend/
+  psira-shiny/
 ```
 
 Clonar los repositorios en esa estructura:
@@ -89,10 +91,30 @@ cd ~/eipsi/psira
 git clone -b develop https://github.com/EIPSI/psira-docker.git
 git clone -b develop https://github.com/EIPSI/psira-frontend.git
 git clone -b develop https://github.com/EIPSI/psira-backend.git
+sudo git clone https://github.com/EIPSI/psira-shiny.git
 ```
 
-⚠️ **Importante:**
-Los nombres y la ubicación relativa importan porque `docker-compose.dev.yml` asume esta estructura.
+Durante el proceso, Git va a pedir credenciales:
+
+```text
+Username for 'https://github.com': [USUARIO_GITHUB]
+Password for 'https://[USUARIO_GITHUB]@github.com': [TOKEN_GITHUB]
+```
+
+**Importante:** en el campo `Password` no tenés que ingresar tu clave de GitHub, sino un **Personal Access Token (PAT)** de GitHub con permisos para acceder al repositorio privado.
+
+---
+> ⚠️ **Importante:**
+> Los nombres y la ubicación relativa importan porque `docker-compose.dev.yml` asume esta estructura.
+---
+
+### Cambiar de rama de trabajo (crear nueva)
+
+```bash
+# Creas tu propia rama
+git checkout -b nombre/descripcion-corta
+```
+
 
 Abrir carpetas desde la terminal
 ```bash
@@ -186,9 +208,15 @@ Una vez levantado el entorno:
 git checkout develop
 # Actualizas la ultima version de la rama
 git pull origin develop
+```
+
+### Cambiar de rama de trabajo (crear nueva)
+
+```bash
 # Creas tu propia rama
 git checkout -b nombre/descripcion-corta
 ```
+
 
 Ejemplo:
 
