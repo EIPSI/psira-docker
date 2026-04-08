@@ -240,7 +240,7 @@ Solo publica la rama en GitHub para que pueda abrirse un Pull Request.
 
 > ### Una vez creada, subida y en la rama propia: se pueden realizar todos los cambios que uno quiera.
 
-[Continuar con el flujo de trabajo con Git en la sección *10. Pull Requests*](#10-pull-requests)
+[Continuar con el flujo de trabajo con Git en la sección **10. Pull Requests**](#10-pull-requests)
 
 ---
 
@@ -463,7 +463,7 @@ En la descripción del Pull Request indicar:
 
 ### 10.3. Revisión y merge
 
-⚠️ Solo la *persona responsable del proyecto* puede hacer merge a `develop` o `main`.
+⚠️ Solo la **persona responsable del proyecto** puede hacer merge a `develop` o `main`.
 
 Esto permite:
 
@@ -480,7 +480,7 @@ Una vez que la rama fue mergeada en `develop`, la rama de trabajo ya no debe seg
 
 #### Eliminar la rama de trabajo
 
-La *persona responsable del proyecto* se encarga de borrar la rama en GitHub, pero usted debe eliminarla a nivel local.
+La **persona responsable del proyecto** se encarga de borrar la rama en GitHub, pero ***usted debe eliminarla a nivel local***.
 
 Borrado local:
 
