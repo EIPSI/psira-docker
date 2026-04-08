@@ -10,6 +10,45 @@ El objetivo es que cualquier integrante del equipo pueda:
 * y abrir un Pull Request hacia `develop`.
 
 ---
+## Índice
+
+- [1. Concepto general (importante leer)](#1-concepto-general-importante-leer)
+- [2. Requisitos](#2-requisitos)
+  - [Sistema operativo](#sistema-operativo)
+  - [Software necesario](#software-necesario)
+- [3. Estructura de carpetas esperada](#3-estructura-de-carpetas-esperada)
+- [4. Variables de entorno (solo una vez)](#4-variables-de-entorno-solo-una-vez)
+- [5. Levantar el entorno de desarrollo](#5-levantar-el-entorno-de-desarrollo)
+- [6. Accesos locales](#6-accesos-locales)
+- [7. Empezamos con Git (antes de empezar a editar)](#7-empezamos-con-git-antes-de-empezar-a-editar)
+  - [Ramas](#ramas)
+  - [Crear una rama de trabajo propia cada vez que vas a editar por primera vez un repositorio](#crear-una-rama-de-trabajo-propia-cada-vez-que-vas-a-editar-por-primera-vez-un-repositorio)
+  - [Crear y cambiar de rama de trabajo](#crear-y-cambiar-de-rama-de-trabajo)
+  - [Subir la rama de trabajo a GitHub](#subir-la-rama-de-trabajo-a-github)
+- [8. Ver cambios en el sistema](#8-ver-cambios-en-el-sistema)
+- [9. Logs y debugging](#9-logs-y-debugging)
+- [10. Pull Requests](#10-pull-requests)
+  - [10.0. Verificar y guardar cambios antes de continuar](#100-verificar-y-guardar-cambios-antes-de-continuar)
+    - [Ver estado de los archivos](#ver-estado-de-los-archivos)
+    - [Agregar cambios al próximo commit](#agregar-cambios-al-próximo-commit)
+    - [Guardar cambios en un commit](#guardar-cambios-en-un-commit)
+    - [Estado ideal antes de seguir](#estado-ideal-antes-de-seguir)
+  - [10.1. Antes de abrir el Pull Request, actualizar la rama con `develop`](#101-antes-de-abrir-el-pull-request-actualizar-la-rama-con-develop)
+    - [Opción recomendada: `merge`](#opción-recomendada-merge)
+    - [Si aparecen conflictos](#si-aparecen-conflictos)
+  - [10.2. Abrir el Pull Request en GitHub](#102-abrir-el-pull-request-en-github)
+  - [10.3. Revisión y merge](#103-revisión-y-merge)
+  - [10.4. Después de que el Pull Request fue aceptado](#104-después-de-que-el-pull-request-fue-aceptado)
+    - [Eliminar la rama de trabajo](#eliminar-la-rama-de-trabajo)
+- [Aclaraciones importantes](#aclaraciones-importantes)
+  - [`checkout`](#checkout)
+  - [`add`, `commit` y `push`](#add-commit-y-push)
+  - [Trabajar en carpetas distintas no evita actualizar la rama](#trabajar-en-carpetas-distintas-no-evita-actualizar-la-rama)
+  - [Si dos Pull Requests se abren casi al mismo tiempo](#si-dos-pull-requests-se-abren-casi-al-mismo-tiempo)
+- [11. Errores comunes](#11-errores-comunes)
+- [12. Qué **NO** hacer](#12-qué-no-hacer)
+- [13. Filosofía del entorno](#13-filosofía-del-entorno)
+---
 
 ## 1. Concepto general (importante leer)
 
