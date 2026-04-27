@@ -10,6 +10,7 @@ RUN install2.r --error \
     jsonlite \
     htmlwidgets \
     htmltools \
+    openssl \
     DT \
     lazyeval \
     plotly \
