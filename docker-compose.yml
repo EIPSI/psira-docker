@@ -58,6 +58,11 @@ services:
       - SENDER_MAIL=${SENDER_MAIL}
       - FRONTEND_ENCRYPTION_KEY=${FRONTEND_ENCRYPTION_KEY}
       - APP_URL=${APP_URL}
+      - SHINY_APPS_DIR=/opt/psira-shiny/shiny_apps
+      - REPORT_EMBED_SECRET=${JWT_SECRET}
+      - REPORT_EMBED_TOKEN_TTL=300
+    volumes:
+      - ${SHINY_APPS_PATH}/shiny_apps:/opt/psira-shiny/shiny_apps:ro
     tty: true
     networks:
       - frontend
@@ -132,13 +137,13 @@ services:
     image: rocker/shiny:4
     build: ./shiny
     restart: unless-stopped
-    ports:
-      - '3838:3838'
     volumes:
       - ${SHINY_APPS_PATH}/shiny_apps:/srv/shiny-server/shiny
       - ${SHINY_APPS_PATH}/graphql_functions:/opt/psira-shared/graphql_functions
       - ${SHINY_APPS_PATH}/utility_functions:/opt/psira-shared/utility_functions
       - ${SHINY_APPS_PATH}/www:/opt/psira-shared/www
+    environment:
+      - REPORT_EMBED_SECRET=${JWT_SECRET}
     networks:
       - shiny
 
