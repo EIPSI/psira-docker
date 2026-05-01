@@ -521,6 +521,12 @@ Una vez que la rama fue mergeada en `develop`, la rama de trabajo ya no debe seg
 
 La **persona responsable del proyecto** se encarga de borrar la rama en GitHub, pero ***usted debe eliminarla a nivel local***.
 
+Ver ramas locales:
+
+```bash
+git branch
+```
+
 Borrado local:
 
 ```bash
