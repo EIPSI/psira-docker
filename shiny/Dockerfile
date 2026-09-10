@@ -11,6 +11,7 @@ RUN install2.r --error \
     htmlwidgets \
     htmltools \
     openssl \
+    openxlsx \
     DT \
     lazyeval \
     plotly \
