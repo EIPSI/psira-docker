@@ -1,0 +1,51 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: "08:30"
+    labels:
+      - security
+      - dependencies
+
+  - package-ecosystem: docker
+    directory: /caddy
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:00"
+    labels:
+      - security
+      - dependencies
+
+  - package-ecosystem: docker
+    directory: /psira-backend
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:10"
+    labels:
+      - security
+      - dependencies
+
+  - package-ecosystem: docker
+    directory: /psira-frontend
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:20"
+    labels:
+      - security
+      - dependencies
+
+  - package-ecosystem: docker
+    directory: /shiny
+    schedule:
+      interval: weekly
+      day: monday
+      time: "09:30"
+    labels:
+      - security
+      - dependencies

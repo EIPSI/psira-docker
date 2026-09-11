@@ -1,0 +1,3 @@
+# ZAP rule configuration for PSIRA staging scans.
+# Format: rule_id<TAB>action<TAB>message
+# Actions: IGNORE, WARN, FAIL. Keep this file small and document accepted risk.
