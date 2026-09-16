@@ -66,10 +66,10 @@
     reverse_proxy psira-frontend
 }
 
-http://localhost, http://127.0.0.1, http://{$SITE_DOMAIN} {
+{$CADDY_HTTP_SITE_ADDRESSES:http://localhost, http://127.0.0.1, http://psira.localhost} {
     import psira_app
 }
 
-localhost, 127.0.0.1, {$SITE_DOMAIN} {
+{$CADDY_HTTPS_SITE_ADDRESSES:localhost, 127.0.0.1, psira.localhost} {
     import psira_app
 }

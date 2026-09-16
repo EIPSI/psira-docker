@@ -81,6 +81,8 @@ services:
     restart: unless-stopped
     environment:
       - SITE_DOMAIN=${SITE_DOMAIN}
+      - CADDY_HTTP_SITE_ADDRESSES=${CADDY_HTTP_SITE_ADDRESSES}
+      - CADDY_HTTPS_SITE_ADDRESSES=${CADDY_HTTPS_SITE_ADDRESSES}
     volumes:
       - ${CADDY_CUSTOM_CADDYFILE}:/etc/caddy/Caddyfile
       - ${CADDY_HOST_LOG_PATH}:/var/log/caddy
